@@ -1,5 +1,7 @@
 body{
-    background: peachpuff url("OrigamiImages/background.jpg") margin="0" padding="0" fixed;
+    background: peachpuff url("OrigamiImages/background.jpg") fixed;
+    padding: 0;
+    margin: 0;
 }
 
 h1{
@@ -19,15 +21,22 @@ li{
     font-size: 24px;
 }
 
-p{
-    color: rgb(105, 134, 45);
-    font-family: Brush Script MT, cursive;
-    font-size: 30px;
+.headertext{
+    /* position: absolute; */
+    left: 50%;
+    top: 50%;
+    transform: translate(0%, -230%);
+    color: rgb(124, 255, 1);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    text-align: left;
+    margin: 100px;
 }
 
 .menu{
     display:flex;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color:black;
     font-size: 20px;
     font-family: sans-serif;
@@ -36,9 +45,9 @@ p{
 }
 
 .grid{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-evenly;
 }
 
 .grid img{
@@ -47,10 +56,48 @@ p{
 }
 
 .origami{
-    border-radius: 20px;
+    border-radius: 50px;
     background-color: white;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 2;
+    margin: 2;
+    transform: translate(0%, -30%);
 
     width: 310px;
     font-family: Algerian;
+    color: rgb(241, 79, 14);
+    text-align: left;
+}
+
+input{
+    padding: 2;
+    margin: 2;
+}
+
+.text{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -200%);
     text-align: center;
+    font-size: 30px;
+    font-family: fantasy;
+    color: rgb(211, 32, 32);
+}
+
+.origamione{
+    border-radius: 50px;
+    background-color: white;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 2;
+    margin: 2;
+    bottom: 100%;
+    transform: translate(0%, -50%);
+
+    width: 310px;
+    font-family: Algerian;
+    color: rgb(241, 79, 14);
+    text-align: left;
 }
